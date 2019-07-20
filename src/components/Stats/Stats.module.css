@@ -1,0 +1,18 @@
+.statsSection {
+  background-color: #ffffff;
+}
+.title {
+  font-size: 16px;
+  font-family: 'Proxima Nova', sans-serif;
+  color: rgb(71, 89, 101);
+  line-height: 1.2;
+  text-align: center;
+}
+.statList {
+  /* margin: 0; */
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+}

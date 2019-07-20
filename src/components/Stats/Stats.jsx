@@ -1,29 +1,42 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Stats.module.css';
 
 const Stats = ({ title, stats }) => (
-  <section className={styles.stats - section}>
-    <h2 className={styles.title}>Upload stats</h2>
+  <section className={styles.statsSection}>
+    {title && <h2 className={styles.title}>{title}</h2>}
 
-    <ul className={styles.stat - list}>
-      <li className={styles.item}>
-        <span className={styles.label}>.docx</span>
-        <span className={styles.percentage}>4%</span>
-      </li>
-      <li className={styles.item}>
-        <span className={styles.label}>.mp3</span>
-        <span className={styles.percentage}>14%</span>
-      </li>
-      <li className={styles.item}>
-        <span className={styles.label}>.pdf</span>
-        <span className={styles.percentage}>41%</span>
-      </li>
-      <li className={styles.item}>
-        <span className={styles.label}>.mp4</span>
-        <span className={styles.percentage}>12%</span>
-      </li>
+    <ul className={styles.statList}>
+      {stats.map(stat => (
+        <li
+          key={stat.id}
+          className={styles.item}
+          style={{
+            backgroundColor: `#${((Math.random() * 0xffffff) << 0).toString(
+              16,
+            )}`,
+          }}
+        >
+          <span className={styles.label}> {stat.label} </span>
+          <span className={styles.percentage}> {stat.percentage} % </span>
+        </li>
+      ))}
     </ul>
   </section>
 );
+Stats.defaultProps = {
+  title: null,
+};
+
+Stats.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }),
+  ).isRequired,
+};
 
 export default Stats;
