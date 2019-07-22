@@ -1,0 +1,82 @@
+.pricingItem {
+  /* box-sizing: border-box; */
+  padding: 85px 75px;
+  background-color: #ffffff;
+  width: 300px;
+  /* height: 700px; */
+  text-align: center;
+}
+.icon {
+  height: 162px;
+  width: 214px;
+  margin: 0 auto 34px;
+  display: block;
+}
+.label {
+  margin-bottom: 14px;
+  font-size: 35px;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+.Bronze {
+  color: #dd7c4b;
+}
+.Silver {
+  color: #c0c0c0;
+}
+.Gold {
+  color: #dda431;
+}
+.capacity {
+  margin-bottom: 14px;
+  font-size: 17px;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: #b4b4b4;
+}
+.description {
+  margin-bottom: 26px;
+  font-size: 15px;
+  font-family: 'Raleway';
+  color: #bababa;
+  line-height: 1.667;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.price {
+  margin-bottom: 32px;
+  font-size: 40px;
+  font-family: 'Oswald';
+  color: #7f8c8d;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.1px;
+}
+.button {
+  font-size: 15px;
+  font-family: 'Oswald';
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.2;
+  border: none;
+  padding: 16px 61px;
+  letter-spacing: 0.5px;
+}
+.GoldButton {
+  composes: button;
+  background-color: #dda431;
+}
+
+.BronzeButton {
+  composes: button;
+  background-color: #dd7c4b;
+}
+
+.SilverButton {
+  composes: button;
+  background-color: #c0c0c0;
+}

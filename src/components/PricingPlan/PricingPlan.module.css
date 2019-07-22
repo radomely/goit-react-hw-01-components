@@ -1,0 +1,7 @@
+.pricingList {
+  display: flex;
+  justify-content: space-between;
+  width: 1410px;
+  list-style: none;
+  margin: 30px auto;
+}

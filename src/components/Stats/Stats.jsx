@@ -12,13 +12,12 @@ const Stats = ({ title, stats }) => (
           key={stat.id}
           className={styles.item}
           style={{
-            backgroundColor: `#${((Math.random() * 0xffffff) << 0).toString(
-              16,
-            )}`,
+            backgroundColor: `rgb(${(Math.random() * 200) <<
+              0},${(Math.random() * 200) << 0},${(Math.random() * 200) << 0})`,
           }}
         >
           <span className={styles.label}> {stat.label} </span>
-          <span className={styles.percentage}> {stat.percentage} % </span>
+          <span className={styles.percentage}> {stat.percentage}% </span>
         </li>
       ))}
     </ul>
