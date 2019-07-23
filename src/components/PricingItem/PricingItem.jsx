@@ -12,7 +12,9 @@ const PricingItem = ({ label, icon, capacity, price, description }) => (
     <p className={styles.capacity}>{capacity} Storage</p>
     <p className={styles.description}>{description}</p>
     <p className={styles.price}>${price}/MO</p>
-    <button className={styles[`${label}Button`]}>Get Started</button>
+    <button type="button" className={styles[`${label}Button`]}>
+      Get Started
+    </button>
   </div>
 );
 
@@ -24,7 +26,7 @@ PricingItem.propTypes = {
   label: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
   capacity: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
+  price: PropTypes.number,
   description: PropTypes.string.isRequired,
 };
 
