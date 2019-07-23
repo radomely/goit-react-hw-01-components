@@ -6,11 +6,7 @@ const PricingItem = ({ label, icon, capacity, price, description }) => (
   <div className={styles.pricingItem}>
     <i
       className={styles.icon}
-      style={{
-        background: `url(${icon})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'bottom',
-      }}
+      style={{ background: `bottom no-repeat url(${icon})` }}
     />
     <h2 className={[styles[label], styles.label].join(' ')}>{label}</h2>
     <p className={styles.capacity}>{capacity} Storage</p>

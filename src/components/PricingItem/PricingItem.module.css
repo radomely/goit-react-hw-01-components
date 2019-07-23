@@ -1,10 +1,11 @@
 .pricingItem {
-  /* box-sizing: border-box; */
   padding: 85px 75px;
-  background-color: #ffffff;
   width: 300px;
-  /* height: 700px; */
+  background-color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.2;
   text-align: center;
+  letter-spacing: 0.5px;
 }
 .icon {
   height: 162px;
@@ -15,11 +16,8 @@
 .label {
   margin-bottom: 14px;
   font-size: 35px;
-  font-family: 'Oswald';
-  text-transform: uppercase;
-  line-height: 1.2;
-  letter-spacing: 0.5px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 .Bronze {
   color: #dd7c4b;
@@ -33,9 +31,7 @@
 .capacity {
   margin-bottom: 14px;
   font-size: 17px;
-  font-family: 'Oswald';
   text-transform: uppercase;
-  line-height: 1.2;
   color: #b4b4b4;
 }
 .description {
@@ -44,16 +40,12 @@
   font-family: 'Raleway';
   color: #bababa;
   line-height: 1.667;
-  text-align: center;
-  letter-spacing: 0.5px;
 }
 .price {
   margin-bottom: 32px;
   font-size: 40px;
-  font-family: 'Oswald';
   color: #7f8c8d;
   text-transform: uppercase;
-  line-height: 1.2;
   letter-spacing: 0.1px;
 }
 .button {
